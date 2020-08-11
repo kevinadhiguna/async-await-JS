@@ -4,9 +4,9 @@ const players = [
     { name: 'Robert Lewandowski', club: 'Bayern Munich' }
 ];
 
-function getPlayers(){
+function showPlayers() {
     setTimeout(() => {
-        players.forEach((players) => {
+        players.forEach(players => {
             console.log(players.name);
         });
     }, 1000);
@@ -19,4 +19,4 @@ function addPlayer(player, callback) {
     }, 2000);
 }
 
-addPlayer({ name: 'Sergio Ramos', club: 'Real Madrid' }, getPlayers);
+addPlayer({ name: 'Kevin De Bruyne', club: 'Manchester City' }, showPlayers);

@@ -4,9 +4,9 @@ const players = [
     { name: 'Robert Lewandowski', club: 'Bayern Munich' }
 ];
 
-function getPlayers(){
+function showPlayers() {
     setTimeout(() => {
-        players.forEach((players) => {
+        players.forEach(players => {
             console.log(players.name);
         });
     }, 1000);
@@ -22,12 +22,12 @@ function addPlayer(player) {
             if (!error) {
                 resolve();
             } else {
-                reject('No player found!');
+                reject('Can not add a player!');
             }
         }, 2000);
     });
 }
 
-addPlayer({ name: 'Kevin De Bruyne', club: 'Manchester City' })
-    .then(getPlayers)
-    .catch(error => console.log(error));
+addPlayer({ name: 'Sergio Ramos', club: 'Real Madrid' })
+    .then(showPlayers)
+    .catch(err => console.log(err));

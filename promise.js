@@ -16,9 +16,7 @@ function addPlayer(player) {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
             players.push(player);
-
             const error = false;
-
             if (!error) {
                 resolve();
             } else {

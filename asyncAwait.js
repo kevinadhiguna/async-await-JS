@@ -30,7 +30,7 @@ function addPlayer(player) {
 
 async function footballers(){
     try {
-        await addPlayer({ name: 'Mason Greenwood', club: 'Manchester Uniter' });
+        await addPlayer({ name: 'Mason Greenwood', club: 'Manchester United' });
         showPlayers();
     } catch(err) {
         console.error(err);
